@@ -1,0 +1,142 @@
+.weather-input__container {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  background: transparent;
+  color: #ededed;
+  backdrop-filter: blur(10px);
+  height: 70px;
+  width: 925px;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  padding: 10px 60px 10px 20px;
+  font-size: 1.7rem;
+  box-shadow: 0 10px 10px #2a224daa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: #ededed;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#btn-submit {
+  height: 100%;
+  position: absolute;
+  right: 0;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: #ededed;
+  padding: 0 20px;
+  font-size: 2.2rem;
+}
+
+.location-box {
+  cursor: pointer;
+  height: 70px;
+  width: 925px;
+
+  box-shadow: 0 10px 10px #2a224daa;
+  color: #ededed;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  p {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .search-input {
+    width: 800px;
+  }
+  .location-box {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .search-input {
+    width: 550px;
+  }
+  .location-box {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-input {
+    width: 420px;
+  }
+  .location-box {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .search-input {
+    font-size: 1.3rem;
+    width: 300px;
+    height: 60px;
+    padding: 5px 60px 5px 18px;
+  }
+
+  #btn-submit {
+    font-size: 2rem;
+  }
+
+  .location-box {
+    font-size: 2rem;
+    padding: 5px 18px;
+    height: 60px;
+    width: 300px;
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .search-input {
+    font-size: 1.1rem;
+    width: 230px;
+    height: 50px;
+  }
+
+  #btn-submit {
+    font-size: 1.5rem;
+  }
+
+  .location-box {
+    font-size: 1.5rem;
+    height: 50px;
+    width: 230px;
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
