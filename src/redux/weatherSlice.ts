@@ -12,7 +12,7 @@ const initialState: WeatherSliceState = {
 export const fetchWeather = createAsyncThunk<Weather, string>(
   "weather/fetchWeather",
   async (city) => {
-    const apiKey = "574a1815bfbf4fd265bb276fdda03d1e";
+    const apiKey = import.meta.env.VITE_REACT_APP_OPENWEATHERMAP_API_KEY as string;
     
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
     const extractedData = await response.json();
