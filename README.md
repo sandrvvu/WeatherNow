@@ -17,6 +17,11 @@ npm install
 ```
 Run the development server: ```npm run dev```
 
+### Note 
+You should create .env file in the project root and add:
+```VITE_OPENWEATHERMAP_API_KEY=your_api_key```\
+Replace your_api_key with your OpenWeather API key (we use this api key in the weatherSlice.ts).
+
 ## Screenshots
 
 + City Search
